@@ -64,3 +64,9 @@
 
 // Xor
 var_dump(true xor true);
+
+/*
+|--------------------
+| End Operators
+|--------------------
+*/
