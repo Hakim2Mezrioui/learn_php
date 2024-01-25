@@ -66,3 +66,9 @@ $x = null;
 | Resource is external resources that we use in PHP like database and file.
 | All of them are considered as resources.
 */
+
+/*
+|--------------------
+| End DataType
+|--------------------   
+*/
