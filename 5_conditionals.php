@@ -31,6 +31,8 @@
 //     echo "unknown";
 // }
 
+// ______________________________________________ //
+
 // switch
 // switch ($variable) {
 //     case 'value1':
@@ -61,6 +63,8 @@
 //         echo "unknown";
 // }
 
+// ______________________________________________ //
+
 // ternary
 
 // (condition) ? do this if true : otherwise do this;
@@ -68,6 +72,8 @@
 // echo ($variable == 2) ? "two" : "unknown";
 // $variableB = $variable == 2 ? "two" : "unknown";
 // echo $variableB;
+
+// ______________________________________________ //
 
 // danger of nested conditionals
 // not usefull
