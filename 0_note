@@ -7,3 +7,5 @@ php name_of_file
 or we can use xampp
 
 the file index.php in xampp execute immediatly when we run the server appache in xampp
+
+PHP_EOL = PHP END OF LINE;
