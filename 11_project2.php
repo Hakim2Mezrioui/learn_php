@@ -18,10 +18,16 @@
 * SOLUTION
 */
 
+$date = "2000-08-09";
+$today = date("Y-m-d");
 
+$diff = strtotime($today) - strtotime($date);
+
+$numOfDays = $diff / (60 * 60 * 24);
+echo round($numOfDays);
 
 /*
 |--------------------
-| Project 2
+| End of Project 2
 |--------------------
 */
