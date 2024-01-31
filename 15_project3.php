@@ -80,9 +80,21 @@ $data = '{
       "Tuvalu": "688",
       "Kiribati": "686",
       "Marshall Islands": "692"
-      // Add more countries as needed
     }
-  }';
+  }
+  ';
+
+  $country = "maroc";
+  $dataArray = json_decode($data, true);
+  $countries = $dataArray['countries'];
+  echo $countries["Morocco"];
+
+  $file = fopen("15_project3.csv", 'w');
+
+  foreach($countries as $country => $phone) {
+    echo "ph: $phone - country: $country";
+    fputcsv($file, [$country, $phone]);
+  }
 
 /*
 |--------------------

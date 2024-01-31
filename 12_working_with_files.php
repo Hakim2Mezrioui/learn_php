@@ -20,7 +20,7 @@ $file = fopen('./12_text.txt', 'w');
 
 // ______________________________________________ //
 
-// flags or mode
+/* flags or mode */
 // r for reading
 // w for writing
 // a for appending
@@ -28,7 +28,7 @@ $file = fopen('./12_text.txt', 'w');
 // ______________________________________________ //
 
 
-// read the file
+/* read the file */
 // $first_line = fgets($file);
 // $second_line = fgets($file);
 

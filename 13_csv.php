@@ -9,7 +9,7 @@
 // what is csv
 // one, two, three
 
-// open and close
+/* open and close */
 /* syntax */
 // $file = fopen(name of file, mode);
 // $file = fegcsv(name of file, length, separator);
@@ -18,7 +18,6 @@
 // $file = fopen("./13_csv.csv", 'r');
 // $line = fgetcsv($file);
 // fclose($file);
-
 
 
 // ______________________________________________ //
