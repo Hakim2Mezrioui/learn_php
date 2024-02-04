@@ -9,8 +9,12 @@
 /* start the session */
 session_start();
 
+// ______________________________________________ //
+
 /* create */
 // $_SESSION['testSession'] = 'testSession';
+
+// ______________________________________________ //
 
 /* read */
 // if(isset($_SESSION["testSession"])) {
@@ -19,8 +23,12 @@ session_start();
 //     echo "it's not set yet";
 // }
 
+// ______________________________________________ //
+
 /* update */
 // $_SESSION['testSession'] = 'testSession updated';
+
+// ______________________________________________ //
 
 /* delete */
 // session_unset(); // Unset all session variables
