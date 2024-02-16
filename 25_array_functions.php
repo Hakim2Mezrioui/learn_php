@@ -15,28 +15,28 @@
 //     'spanish' => 'basic',
 // ];
 
-// array_intersecter($array, function, mode);
+// array_filter($array, function, mode);
 
 // mode
 // 0 value of each item
-// ARRAY_intersectER_USE_KEY
-// ARRAY_intersectER_USE_BOTH
+// ARRAY_FILTER_USE_KEY
+// ARRAY_FILTER_USE_BOTH
 
-// $filtredArray =  array_intersecter($array, function($level) {
+// $filtredArray =  array_filter($array, function($level) {
 //     return $level == "good"; // or false
 // }, 0);
 
 // print_r($filtredArray);
 
-// $filtredArray =  array_intersecter($array, function($language) {
+// $filtredArray =  array_filter($array, function($language) {
 //     return $language == "english"; // or false
-// }, ARRAY_intersectER_USE_KEY);
+// }, ARRAY_FILTER_USE_KEY);
 
 // print_r($filtredArray);
 
 // $filtredArray =  array_intersecter($array, function($level, $language) {
 //     return $language == "english" || $level == 'good'; // or false
-// }, ARRAY_intersectER_USE_BOTH);
+// }, ARRAY_FILTER_USE_BOTH);
 
 // print_r($filtredArray);
 
@@ -48,7 +48,7 @@
 // $arrayA = ['Pratham', 'Vitto', 'Francesco', 'Simon'];
 // $arrayB = ['Vitto', 'Oliver', 'Meet', 'James', 'Simon'];
 
-// $mergeArray = array_intersecte($arrayA, $arrayB);
+// $mergeArray = array_merge($arrayA, $arrayB);
 // print_r($mergeArray);
 
 // $arrayA = [
@@ -65,7 +65,7 @@
 //     'french' => 'basic',
 //     'chinses' => 'unknown',
 // ];
-// $mergeArray = array_intersecte($arrayA, $arrayB);
+// $mergeArray = array_merge($arrayA, $arrayB);
 // print_r($mergeArray);
 
 
@@ -73,13 +73,13 @@
 
 
 /* array map */
-// array_intersectfunction, $array);
+// array_map(function, $array);
 // function addHashtag($item) {
 //     return '#'.$item;
 // }
 // $array = ['english', 'german', 'indian', 'chines', 'arabic'];
-// $hashtaggedArray = array_intersect'addHashtag', $array);
-// $hashtaggedArray = array_intersectfunction($item) { return '#'.$item; }, $array);
+// $hashtaggedArray = array_map('addHashtag', $array);
+// $hashtaggedArray = array_map(function($item) { return '#'.$item; }, $array);
 // print_r($hashtaggedArray);
 
 
@@ -88,8 +88,8 @@
 
 /* array chunk */
 // $array = ['english', 'german', 'indian', 'chines', 'arabic'];
-// $chunkedArray = array_intersectk($array, 2, true);
-// $chunkedArray = array_intersectk($array, 2, false);
+// $chunkedArray = array_chunk($array, 2, true);
+// $chunkedArray = array_chunk($array, 2, false);
 // print_r($chunkedArray);
 
 
@@ -104,7 +104,7 @@
 //     'french' => 'unkown',
 //     'spanish' => 'basic',
 // ];
-// $key = array_intersectch('good', $array, false);
+// $key = array_search('good', $array, false);
 // if($key != false) {
 //     echo "the language is : $key";
 // } else {
@@ -128,7 +128,7 @@
 //     'chinese' => 'unkown',
 // ];
 
-// $updatedArray = array_intersectace($array, $arrayUpdated);  // we can pass it more then two array
+// $updatedArray = array_replace($array, $arrayUpdated);  // we can pass it more then two array
 // print_r($updatedArray);
 
 
@@ -185,7 +185,7 @@
 // SORT_LOCALE_STRING
 
 // $array = ['amir', 'php', 'youtube', 'amir', '2022', 2022,'youtube'];
-// $uniqueArray = array_intersectue($array, SORT_REGULAR);
+// $uniqueArray = array_unique($array, SORT_REGULAR);
 // print_r($uniqueArray);
 
 
@@ -196,7 +196,7 @@
 // $keys = ['english', 'german', 'french'];
 // $values = ['fluent', 'good', 'unkown'];
 
-// $combinedArray = array_intersectine($keys, $values);
+// $combinedArray = array_combine($keys, $values);
 // print_r($combinedArray);
 
 
@@ -205,7 +205,7 @@
 
 /* array reduce */
 // $array = [1, 2, 3, 4, 5];
-// $sum = array_intersectce($array, function($carry, $item) {
+// $sum = array_reduce($array, function($carry, $item) {
 //     $carry = $carry + $item;
 //     return $carry;
 // });
@@ -228,7 +228,7 @@
 //     'spanish' => 'basic',
 // ];
 
-// $flipedArray = array_intersect($array);
+// $flipedArray = array_flip($array);
 // print_r($flipedArray);
 
 
@@ -254,11 +254,11 @@
 //     'spanish' => 'basic',
 // ];
 
-// $diffArray =  array_intersect($arrayA, $arrayC); // COMPARE VALUES
+// $diffArray =  array_diff($arrayA, $arrayC); // COMPARE VALUES
 // print_r($diffArray);
-// $diffArrayKey = array_intersect_key($arrayA, $arrayC); // COMPARE KEYS
+// $diffArrayKey = array_diff_key($arrayA, $arrayC); // COMPARE KEYS
 // print_r($diffArrayKey);
-// $diffArrayAssoc = array_intersect_assoc($arrayA, $arrayB); // COMPARE BOTH
+// $diffArrayAssoc = array_diff_assoc($arrayA, $arrayB); // COMPARE BOTH
 // print_r($diffArrayAssoc);
 
 
@@ -317,3 +317,9 @@ $sentence = implode(" ", $array);
 $newArray = explode(" ", $sentence);
 // echo $sentence;
 print_r($newArray);
+
+/*
+|--------------------
+| End Of Array Functions
+|--------------------
+*/
