@@ -1,0 +1,17 @@
+{
+    "name": "mezriouihakim/php-router",
+    "description": "this is a simple router built during the php course",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Mezriouihakim\\PhpRouter\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "mezriouihakim"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
