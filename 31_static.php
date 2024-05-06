@@ -6,7 +6,8 @@
 |--------------------
 */
 class Humain {
-    public static $name = 'humain';
+    static public $name = 'humain';
+    // public $age = 22;
     public static function sayHello() {
         echo "hello " . self::$name;
     }
